@@ -51,12 +51,15 @@ let topsJson = [
   }
 
   
-function atlasitTop()
+async function atlasitTop()
 {
+
+    let topsJson = await iegutDatusNoApi('https://armandspucs.github.io/atminas_spele_pabeigts_2/top.json');
+    //console.log(datiJson);
 
   for (i = 0; i < topsJson.length; i++)
   {
-      console.log(i);
+      
 
       let tabula = document.querySelector(".tops");
 
