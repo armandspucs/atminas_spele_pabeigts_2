@@ -6,7 +6,6 @@ vards = decodeURI(vards);
 document.querySelector('.virsraksts').innerHTML = 'Sveiks '+vards;
 
 let laiks = 0 //new Number()
-
 let klikski = 0
 
 const laukumi       = ['L10','L11','L12','L13','L14','L15','L16','L17','L18','L19','L20','L21'];
@@ -83,8 +82,8 @@ function veiktGajienu(laukums)
 	if( laukumi.length == atvertieLaukumi.length  )
 	{
 		console.log('visi laukumi atvērti')
-		alert('Apsveicam! \nlaiks: \nKlikški:'+klikski+' \n\nTagad vari pievienoties TOPAM');
-		document.location = 'top.html#'+vards+','+klikski
+		alert('Apsveicam! \nlaiks: \nKlikški:'+klikski+'  \nLaiks:'+laiks+' \n\nTagad vari pievienoties TOPAM');
+		document.location = 'top.html#'+vards+','+klikski+','+laiks
 		//goto tops
 	}
 
@@ -97,6 +96,20 @@ function pasleptLaukumu(laukums)
 	document.querySelector('#'+laukums+' div').style.display='none';
 }
 
+
+
+
+
+
+
+//setInterval(function(){ laiks++; }, 1000);
+setInterval( skaititLaiku, 1000);
+
+
+function skaititLaiku()
+{
+	laiks++;
+}
 
 
 
