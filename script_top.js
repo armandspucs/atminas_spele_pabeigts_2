@@ -43,6 +43,17 @@ let topsJson = [
 
 
 
+  async function iegutDatusNoApi(url)
+  {
+    let datiNoServera = await fetch(url);
+    let datiJson = await datiNoServera.json();
+    return datiJson;
+  }
+
+  
+function atlasitTop()
+{
+
   for (i = 0; i < topsJson.length; i++)
   {
       console.log(i);
@@ -61,5 +72,9 @@ let topsJson = [
       </tr>`;
 
   }
+
+}
+
+atlasitTop();
 
 

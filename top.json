@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "vards": "Liene",
+    "klase": "10b",
+    "laiks": "500",
+    "klikski": "35",
+    "datums": "2021-11-24",
+    "piezimes": ""
+  },
+  {
+      "id": 1,
+      "vards": "Jānis",
+      "klase": "10b",
+      "laiks": "500",
+      "klikski": "35",
+      "datums": "2021-11-24",
+      "piezimes": ""
+  },
+  {
+      "id": 2,
+      "vards": "Jana",
+      "klase": "10b",
+      "laiks": "500",
+      "klikski": "35",
+      "datums": "2021-11-24",
+      "piezimes": ""
+  }
+]
