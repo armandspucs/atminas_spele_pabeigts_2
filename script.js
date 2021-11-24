@@ -1,9 +1,14 @@
 
 //no adreses iegūst vārdu un ievieto to virsrakstā
-let vards = window.location.hash;
-vards = vards.replace('#','');
-vards = decodeURI(vards);
+let adrese = window.location.hash;
+adrese = decodeURI(adrese);
+adrese = adrese.replace('#','');
+adrese = adrese.split(",");
+vards  = adrese[0]
 document.querySelector('.virsraksts').innerHTML = 'Sveiks '+vards;
+
+let vecums  = adrese[1]
+let regions = adrese[2]
 
 let laiks = 0 //new Number()
 let klikski = 0

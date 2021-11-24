@@ -45,16 +45,30 @@
 		
 		
         <div class="content">
-            <p>Noteikumu teksts</p>
+            <p>Atrodi visus vienādos laukumus, pēc iespējas ātrāk!</p>
 
-            <h3>Ievadi savu vārdu:</h3 >
-            <input id="vards" />
+            <h3>Info par spēlētāju:</h3 >
+            
+            Vārds: <input id="vards" />
+            <br />
+            Vecums: <input id="vecums" />
+            <br />
+            Reģions
+            <select id="regions">
+                <option value="Kurzeme">Kurzeme</option>
+                <option value="Vidzeme">Vidzeme</option>
+                <option value="Latgale">Latgale</option>
+                <option value="Sēlija">Sēlija</option>
+            </select>
+            <br />
             <button onclick=" saktSpeli() ">Sākt spēli</button>
 
             <script>
                 function saktSpeli()
                 {
                     let ievaditsVards = document.querySelector('#vards').value;
+                    let ievaditsVecums = document.querySelector('#vecums').value;
+                    let ievaditsRegions = document.querySelector('#regions').value;
 
                     if(ievaditsVards == '')
                     {
@@ -63,7 +77,7 @@
                     else
                     {
                         //vards = encodeURI(vards);
-                        window.location = 'spele.html#'+ievaditsVards;
+                        window.location = 'spele.html#'+ievaditsVards+','+ievaditsVecums+','+ievaditsRegions;
                     }
                     
                 }

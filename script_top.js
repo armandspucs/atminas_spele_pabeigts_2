@@ -10,7 +10,7 @@ let klikski = adrese[1]
 document.querySelector('.virsraksts').innerHTML = 'Apsveicam '+vards+', klikšķi:'+klikski;
 
 
-
+/*
 let topsJson = [
     {
       "id": 0,
@@ -40,6 +40,7 @@ let topsJson = [
         "piezimes": ""
     }
   ]
+  */
 
 
 
