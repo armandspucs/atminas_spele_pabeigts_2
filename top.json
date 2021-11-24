@@ -2,7 +2,7 @@
   {
     "id": 0,
     "vards": "Liene",
-    "klase": "10b",
+    "vecums": "10",
     "laiks": "19",
     "klikski": "35",
     "datums": "2021-11-24",
@@ -11,7 +11,7 @@
   {
       "id": 1,
       "vards": "Jānis",
-      "klase": "10b",
+      "vecums": "12",
       "laiks": "500",
       "klikski": "35",
       "datums": "2021-11-24",
@@ -20,7 +20,7 @@
   {
       "id": 2,
       "vards": "Jana",
-      "klase": "10b",
+      "vecums": "17",
       "laiks": "110",
       "klikski": "35",
       "datums": "2021-11-24",

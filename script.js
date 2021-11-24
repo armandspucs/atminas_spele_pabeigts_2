@@ -88,7 +88,7 @@ function veiktGajienu(laukums)
 	{
 		console.log('visi laukumi atvērti')
 		alert('Apsveicam! \nlaiks: \nKlikški:'+klikski+'  \nLaiks:'+laiks+' \n\nTagad vari pievienoties TOPAM');
-		document.location = 'top.html#'+vards+','+klikski+','+laiks
+		document.location = 'top.html#'+vards+','+vecums+','+regions+','+klikski+','+laiks
 		//goto tops
 	}
 

@@ -6,8 +6,11 @@ adrese = decodeURI(adrese);
 adrese = adrese.split(",");
 
 let vards   = adrese[0]
-let klikski = adrese[1]
-document.querySelector('.virsraksts').innerHTML = 'Apsveicam '+vards+', klikšķi:'+klikski;
+let vecums  = adrese[1]
+let regions = adrese[2]
+let klikski = adrese[3]
+let laiks   = adrese[4]
+document.querySelector('.virsraksts').innerHTML = 'Apsveicam '+vards+', klikšķi:'+klikski+', sekundes:'+laiks;
 
 
 /*
@@ -69,7 +72,7 @@ async function atlasitTop()
       tabula.innerHTML = tabula.innerHTML+`
       <tr id="`+topsJson[i]['id']+`">
       <td> `+topsJson[i]['vards']+` </td>
-      <td> `+topsJson[i]['klase']+` </td>
+      <td> `+topsJson[i]['vecums']+` </td>
       <td> `+topsJson[i]['laiks']+` </td>
       <td> `+topsJson[i]['klikski']+` </td>
       <td> `+topsJson[i]['datums']+` </td>
@@ -80,5 +83,22 @@ async function atlasitTop()
 }
 
 atlasitTop();
+
+
+
+function pievienotTop()
+{
+    let tabula = document.querySelector(".tops");
+
+
+    tabula.innerHTML = tabula.innerHTML+`
+    <tr id="jauns">
+    <td> `+vards+` </td>
+    <td> `+vecums+` </td>
+    <td> `+laiks+` </td>
+    <td> `+klikski+` </td>
+    <td> `+1+` </td>
+    </tr>`;
+}
 
 
