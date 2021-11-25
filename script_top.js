@@ -13,6 +13,10 @@ let laiks   = adrese[4]
 document.querySelector('.virsraksts').innerHTML = 'Apsveicam '+vards+', klikšķi:'+klikski+', sekundes:'+laiks;
 
 
+let datums = new Date();
+let datumsString = datums.getFullYear()+'-'+datums.getMonth()+'-'+datums.getDate()
+
+
 /*
 let topsJson = [
     {
@@ -97,7 +101,7 @@ function pievienotTop()
     <td> `+vecums+` </td>
     <td> `+laiks+` </td>
     <td> `+klikski+` </td>
-    <td> `+1+` </td>
+    <td> `+datumsString+` </td>
     </tr>`;
 }
 
