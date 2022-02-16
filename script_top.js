@@ -62,7 +62,7 @@ let topsJson = [
 async function atlasitTop()
 {
 
-    let topsJson = await iegutDatusNoApi('https://armandspucs.github.io/atminas_spele_pabeigts_2/top.json');
+    let topsJson = await iegutDatusNoApi('https://armandspucs.github.io/atminas_spele_pabeigts_2/rezultati.json');
     //console.log(datiJson);
 
   for (i = 0; i < topsJson.length; i++)
