@@ -62,7 +62,8 @@ let topsJson = [
 async function atlasitTop()
 {
 
-    let topsJson = await iegutDatusNoApi('https://armandspucs.github.io/atminas_spele_pabeigts_2/rezultati.json');
+    //let topsJson = await iegutDatusNoApi('https://armandspucs.github.io/atminas_spele_pabeigts_2/rezultati.json');
+    let topsJson = await iegutDatusNoApi('rezultati.json');
     //console.log(datiJson);
 
   for (i = 0; i < topsJson.length; i++)
@@ -76,6 +77,7 @@ async function atlasitTop()
       tabula.innerHTML = tabula.innerHTML+`
       <tr id="`+topsJson[i]['id']+`">
       <td> `+topsJson[i]['vards']+` </td>
+      <td> `+topsJson[i]['skola']+` </td>
       <td> `+topsJson[i]['vecums']+` </td>
       <td> `+topsJson[i]['laiks']+` </td>
       <td> `+topsJson[i]['klikski']+` </td>
